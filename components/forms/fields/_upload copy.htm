@@ -1,0 +1,63 @@
+<div class="gf-field-wrapper gf-field-upload gf-field-{{ field.key }} {{ field.wrapper_class }} {{ field.is_required ? 'required' }}">
+    <label>
+        <span>{{ field.label | raw }}</span>{{ field.is_required ? '<span style="color:#ff0000!important;">&nbsp;*</span>' }}
+        <input type="file"
+               class="{{ field.field_class }}"
+               {% if (field.uploadHasMimes) %}
+               accept="{{ field.uploadAcceptHtmlAttribute }}"
+               {% endif %}
+               {% if (field.uploadIsMultiple) %}
+               multiple
+               {% endif %}
+               name="{{ field.key }}{{ field.uploadIsMultiple ? '[]' }}"
+               {{ field.is_required ? 'required' }}>
+    </label>
+    {% if field.comment %}
+    <div class="gf-field-comment">
+        {{ field.comment }}
+    </div>
+    {% endif %}
+    <div class="gf-field-validation-message"
+         data-validate-for="{{ field.key }}"></div>
+</div>
+
+
+
+<div class="input-group">
+  <span class="input-group-btn">
+    <span class="btn btn-default btn-file">
+      Browse... 
+      <input data-url="/upload" accept="image/jpeg" name="image" type="file" id="image">
+    </span>
+  </span>
+  <input readonly="readonly" placeholder="Picture file" class="form-control" name="filename" type="text">
+</div>
+
+
+<div class="gf-field-wrapper gf-field-upload gf-field-{{ field.key }} {{ field.wrapper_class }} {{ field.is_required ? 'required' }}">
+  <div class="input-group">
+    <span class="input-group-btn">
+      <span class="btn btn-default btn-file">
+        <span>{{ field.label | raw }}</span>{{ field.is_required ? '<span style="color:#ff0000!important;">&nbsp;*</span>' }}
+          <input type="file"
+                class="{{ field.field_class }}"
+                {% if (field.uploadHasMimes) %}
+                accept="{{ field.uploadAcceptHtmlAttribute }}"
+                {% endif %}
+                {% if (field.uploadIsMultiple) %}
+                multiple
+                {% endif %}
+                name="{{ field.key }}{{ field.uploadIsMultiple ? '[]' }}"
+                {{ field.is_required ? 'required' }}>
+      </span>
+    </span>
+    <input readonly="readonly" placeholder="{{ field.label | raw }}" class="form-control" name="{{ field.key }}" type="text">
+      {% if field.comment %}
+      <div class="gf-field-comment">
+          {{ field.comment }}
+      </div>
+      {% endif %}
+      <div class="gf-field-validation-message"
+          data-validate-for="{{ field.key }}"></div>
+  </div>
+</div>

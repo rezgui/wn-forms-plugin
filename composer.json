@@ -1,0 +1,35 @@
+{
+    "name": "rezgui/wn-forms-plugin",
+    "type": "winter-plugin",
+    "description": "Create easy (and almost magic) AJAX forms",
+    "keywords": [
+        "winter",
+        "cms",
+        "wintercms",
+        "plugin",
+        "form",
+        "forms",
+        "gromit forms",
+        "rezgui forms",       
+        "rsolution forms",         
+        "recaptcha"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GromIT",
+            "email": "info@grom-it.ru",
+            "role": "Original Author"
+        },
+        {
+            "name": "Yacine REZGUI",
+            "email": "yacine.rezgui@gmail.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0",
+        "ext-json": "*"
+    }
+}
