@@ -1,6 +1,20 @@
-This plugin is a fork of [oc-forms-plugin](https://github.com/gromitsoft/oc-forms-plugin).
+This plugin is a fork of [oc-forms-plugin](https://github.com/gromitsoft/oc-forms-plugin). (Gromit.Forms) is a Simple and powerful frontend forms constructor for OctoberCMS forked for WinterCMS.
+![](https://banner.beyondco.de/wn-forms-plugin.png?theme=light&packageManager=composer+require&packageName=rezgui%2Fwn-forms-plugin&pattern=bankNote&style=style_1&description=simple+and+powerful+forms+constructor&md=1&showWatermark=0&fontSize=100px&images=document-text)
 
-**Gromit.Forms** is a Simple and powerful frontend forms constructor for October CMS forked for Winter CMS.
+WinterCMS plugin for creating custom front-end forms. With this plugin you can create a form of any complexity and customize it to your liking.
+
+## Features
+- Easy build and manage your forms in WinterCMS backend
+- Tracking the results of filling out forms
+- Easy customization of form templates
+- Reorder fields
+- Files uploader
+- Using standard WinterCMS mail templates
+- Google reCaptcha support
+- Export, import and copy of form configuration
+- Export submissions (csv)
+- Any number of recipients
+- Events support
 
 ## Creating forms
 For create new form go to **Forms** in the main menu. Then click on **Add form** button.
